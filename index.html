@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Urban Bites | Fresh Flavors. Urban Vibes.</title>
+    <link rel="icon" type="image/png" href="Urban-bites.png">
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- ================= HEADER ================= -->
+
+<header class="header">
+
+    <div class="container nav-container">
+
+        <a href="#home" class="logo">
+            <span>URBAN</span> BITES
+        </a>
+
+        <nav class="navbar" id="navbar">
+            <a href="#home" class="active">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+
+        <button class="cart-button" id="cartBtn">
+            <i class="fa-solid fa-bag-shopping"></i>
+            <span>Cart</span>
+            <b id="cartCount">0</b>
+        </button>
+
+        <button class="menu-toggle" id="menuToggle">
+            <i class="fa-solid fa-bars"></i>
+        </button>
+
+    </div>
+
+</header>
+
+
+<!-- ================= HERO ================= -->
+
+<section class="hero" id="home">
+
+    <div class="container hero-container">
+
+        <div class="hero-content">
+
+            <p class="eyebrow">
+                FRESH • FAST • FLAVORFUL
+            </p>
+
+            <h1>
+                Good food.<br>
+                <span>Good mood.</span>
+            </h1>
+
+            <p class="hero-description">
+                Street-inspired comfort food made fresh for the city.
+                Delicious flavors, quality ingredients and good vibes.
+            </p>
+
+            <div class="hero-buttons">
+
+                <a href="#menu" class="primary-btn">
+                    Explore Menu
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+
+                <a href="#about" class="secondary-btn">
+                    Our Story
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <div class="hero-image">
+
+            <div class="hero-circle"></div>
+
+            <img
+                src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=900&q=85"
+                alt="Delicious burger">
+
+            <div class="hero-tag">
+                <i class="fa-solid fa-star"></i>
+                <div>
+                    <strong>4.9</strong>
+                    <small>Customer Rating</small>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= MENU ================= -->
+
+<section class="menu-section" id="menu">
+
+    <div class="container">
+
+        <div class="section-heading">
+
+            <div>
+                <p class="section-label">OUR FAVORITES</p>
+
+                <h2>
+                    Popular on<br>
+                    <span>the table</span>
+                </h2>
+            </div>
+
+            <p class="section-description">
+                From juicy burgers to loaded fries and classic pizzas,
+                there's something for every craving.
+            </p>
+
+        </div>
+
+
+        <!-- SEARCH -->
+
+        <div class="menu-controls">
+
+            <div class="search-box">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search your favorite food..."
+                >
+            </div>
+
+
+            <div class="categories">
+
+                <button class="category-btn active" data-category="all">
+                    All
+                </button>
+
+                <button class="category-btn" data-category="burger">
+                    Burgers
+                </button>
+
+                <button class="category-btn" data-category="pizza">
+                    Pizza
+                </button>
+
+                <button class="category-btn" data-category="fries">
+                    Fries
+                </button>
+
+                <button class="category-btn" data-category="drink">
+                    Drinks
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- FOOD CARDS -->
+
+        <div class="food-grid" id="foodGrid"></div>
+
+        <p class="no-results" id="noResults">
+            No food found. Try another search.
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- ================= ABOUT ================= -->
+
+<section class="about-section" id="about">
+
+    <div class="container about-container">
+
+        <div class="about-image">
+
+            <img
+                src="https://images.unsplash.com/photo-1515003197210-e0cd71810b5f?auto=format&fit=crop&w=900&q=85"
+                alt="Restaurant food">
+
+            <div class="experience-box">
+                <strong>5+</strong>
+                <span>Years of<br>Good Food</span>
+            </div>
+
+        </div>
+
+
+        <div class="about-content">
+
+            <p class="section-label">ABOUT URBAN BITES</p>
+
+            <h2>
+                Food made with<br>
+                <span>passion.</span>
+            </h2>
+
+            <p>
+                Urban Bites was created for people who love great food
+                without the unnecessary fuss.
+            </p>
+
+            <p>
+                We combine street-food inspiration with fresh ingredients
+                and modern flavors to create food that's simple,
+                delicious and memorable.
+            </p>
+
+            <div class="about-features">
+
+                <div>
+                    <i class="fa-solid fa-leaf"></i>
+                    <span>Fresh Ingredients</span>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-fire"></i>
+                    <span>Made Fresh</span>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-heart"></i>
+                    <span>Made With Love</span>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- ================= CONTACT ================= -->
+
+<section class="contact-section" id="contact">
+
+    <div class="container contact-container">
+
+        <div class="contact-content">
+
+            <p class="section-label">GET IN TOUCH</p>
+
+            <h2>
+                Let's talk<br>
+                <span>food.</span>
+            </h2>
+
+            <p>
+                Have a question, suggestion or just want to say hello?
+                We'd love to hear from you.
+            </p>
+
+            <div class="contact-info">
+
+                <div class="contact-item">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <div>
+                        <strong>Visit Us</strong>
+                        <span>Urban Street, Ahmedabad, Gujarat</span>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fa-solid fa-phone"></i>
+                    <div>
+                        <strong>Call Us</strong>
+                        <span>+91 7874810345</span>
+                    </div>
+                </div>
+
+                <div class="contact-item">
+                    <i class="fa-solid fa-envelope"></i>
+                    <div>
+                        <strong>Email</strong>
+                        <span>hello@urbanbites.com</span>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <form class="contact-form" id="contactForm">
+
+            <input
+                type="text"
+                id="name"
+                placeholder="Your Name"
+                required
+            >
+
+            <input
+                type="email"
+                id="email"
+                placeholder="Your Email"
+                required
+            >
+
+            <textarea
+                id="message"
+                rows="6"
+                placeholder="Your Message"
+                required
+            ></textarea>
+
+            <button type="submit" class="primary-btn">
+                Send Message
+                <i class="fa-solid fa-paper-plane"></i>
+            </button>
+
+        </form>
+
+    </div>
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer class="footer">
+
+    <div class="container footer-container">
+
+        <div>
+
+            <a href="#home" class="logo">
+                <span>URBAN</span> BITES
+            </a>
+
+            <p>
+                Fresh Flavors. Urban Vibes.
+            </p>
+
+        </div>
+
+
+        <div class="social-icons">
+
+            <a href="#">
+                <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-brands fa-facebook-f"></i>
+            </a>
+
+            <a href="#">
+                <i class="fa-brands fa-x-twitter"></i>
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="copyright">
+        © 2026 Urban Bites. All Rights Reserved.
+    </div>
+
+</footer>
+
+
+<!-- ================= CART SIDEBAR ================= -->
+
+<div class="overlay" id="overlay"></div>
+
+<aside class="cart-sidebar" id="cartSidebar">
+
+    <div class="cart-header">
+
+        <div>
+            <p class="section-label">YOUR ORDER</p>
+            <h2>Your Cart</h2>
+        </div>
+
+        <button id="closeCart">
+            <i class="fa-solid fa-xmark"></i>
+        </button>
+
+    </div>
+
+
+    <div class="cart-items" id="cartItems">
+
+        <div class="empty-cart">
+
+            <i class="fa-solid fa-bag-shopping"></i>
+
+            <h3>Your cart is empty</h3>
+
+            <p>
+                Add something delicious from our menu.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <div class="cart-footer">
+
+        <div class="subtotal">
+
+            <span>Subtotal</span>
+
+            <strong id="cartTotal">
+                ₹0
+            </strong>
+
+        </div>
+
+        <button class="checkout-btn" id="checkoutBtn">
+            Checkout
+            <i class="fa-solid fa-arrow-right"></i>
+        </button>
+
+    </div>
+
+</aside>
+
+
+<!-- ================= TOAST ================= -->
+
+<div class="toast" id="toast">
+    <i class="fa-solid fa-circle-check"></i>
+    <span>Added to cart!</span>
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
